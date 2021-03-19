@@ -13,10 +13,10 @@ public class SquareTest {
     }
 
     @Test
-    public void whenBound4Then0149() {
-        int bound = 4;
+    public void whenBound4Then014916() {
+        int bound = 5;
         int[] result = Square.calculate(bound);
-        int[] expected = new int[] {0, 1, 4, 9};
+        int[] expected = new int[] {0, 1, 4, 9, 16};
         Assert.assertArrayEquals(expected, result);
     }
 }
