@@ -6,7 +6,7 @@ public class Defragment {
             if (array[index] == null) {
                 int point = index; /* указатель на null ячейку. */
                 /* переместить первую не null ячейку. Нужен цикл. */
-                for (int i = point; i < array.length; i++) {
+                for (int i = point + 1; i < array.length; i++) {
                     if (array[i] != null) {
                         array[point] = array[i];
                         array[i] = null;
