@@ -15,7 +15,7 @@ public class Machine {
                 rsl[j++] = coins[i];
             }
         }
-        int size = j;
-        return Arrays.copyOf(rsl, size);
+
+        return Arrays.copyOf(rsl, j);
     }
 }
