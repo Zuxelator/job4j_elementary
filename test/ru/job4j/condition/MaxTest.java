@@ -40,4 +40,25 @@ import org.junit.Test;
             int expected = 5;
             Assert.assertEquals(result, expected);
         }
+
+        @Test
+        public void whenMax3to6to8Then8() {
+        int first = 3;
+        int second = 6;
+        int third = 8;
+        int result = Max.max(first, second, third);
+        int expected = 8;
+        Assert.assertEquals(result, expected);
+        }
+
+        @Test
+        public void whenMax3to6to18to15Then18() {
+            int first = 3;
+            int second = 6;
+            int third = 18;
+            int fourth = 15;
+            int result = Max.max(first, second, third, fourth);
+            int expected = 18;
+            Assert.assertEquals(result, expected);
+        }
 }
